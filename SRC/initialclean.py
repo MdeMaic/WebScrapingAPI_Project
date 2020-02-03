@@ -110,7 +110,6 @@ def cleanMerge():
     if not df['Country'].equals(df['name']):
         print("FAIL - Country names are not cleaned.")
     else:
-
         df = df.drop(columns=["name","In_lst"])
         df = df.sort_values("HDIrank").reset_index(drop=True)
         df.to_csv("OUTPUT/HDIrank2019_02_mergedDataframes.csv")
