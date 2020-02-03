@@ -1,0 +1,21 @@
+,HDIrank,Country,HDI,LifeExpectancy,ExpectedSchoolingYears,MeanSchoolingYears,GNIperCapita,LastYearRank,Category,alpha2Code,alpha3Code,capital,region,subregion,population,flag
+0,1,Norway,0.9540000000000001,82.3,18.1,12.6,68059,1,VERY HIGH HDI,NO,NOR,Oslo,Europe,Northern Europe,5223256,https://restcountries.eu/data/nor.svg
+1,2,Switzerland,0.946,83.6,16.2,13.4,59375,2,VERY HIGH HDI,CH,CHE,Bern,Europe,Western Europe,8341600,https://restcountries.eu/data/che.svg
+2,3,Ireland,0.9420000000000001,82.1,18.8,12.5,55660,3,VERY HIGH HDI,IE,IRL,Dublin,Europe,Northern Europe,6378000,https://restcountries.eu/data/irl.svg
+3,4,Germany,0.9390000000000001,81.2,17.1,14.1,46946,4,VERY HIGH HDI,DE,DEU,Berlin,Europe,Western Europe,81770900,https://restcountries.eu/data/deu.svg
+4,5,Hong Kong,0.9390000000000001,84.7,16.5,12.0,60221,6,VERY HIGH HDI,HK,HKG,City of Victoria,Asia,Eastern Asia,7324300,https://restcountries.eu/data/hkg.svg
+5,6,Australia,0.938,83.3,22.1,12.7,44097,5,VERY HIGH HDI,AU,AUS,Canberra,Oceania,Australia and New Zealand,24117360,https://restcountries.eu/data/aus.svg
+6,7,Iceland,0.938,82.9,19.2,12.5,47566,7,VERY HIGH HDI,IS,ISL,Reykjavík,Europe,Northern Europe,334300,https://restcountries.eu/data/isl.svg
+7,8,Sweden,0.937,82.7,18.8,12.4,47955,7,VERY HIGH HDI,SE,SWE,Stockholm,Europe,Northern Europe,9894888,https://restcountries.eu/data/swe.svg
+8,9,Singapore,0.935,83.5,16.3,11.5,83792,9,VERY HIGH HDI,SG,SGP,Singapore,Asia,South-Eastern Asia,5535000,https://restcountries.eu/data/sgp.svg
+9,10,Netherlands,0.9329999999999999,82.1,18.0,12.2,50013,10,VERY HIGH HDI,NL,NLD,Amsterdam,Europe,Western Europe,17019800,https://restcountries.eu/data/nld.svg
+10,180,Mozambique,0.446,60.2,9.7,3.5,1154,180,LOW HDI,MZ,MOZ,Maputo,Africa,Eastern Africa,26423700,https://restcountries.eu/data/moz.svg
+11,181,Sierra Leone,0.43799999999999994,54.3,10.2,3.6,1381,181,LOW HDI,SL,SLE,Freetown,Africa,Western Africa,7075641,https://restcountries.eu/data/sle.svg
+12,182,Burkina Faso,0.434,61.2,8.9,1.6,1705,183,LOW HDI,BF,BFA,Ouagadougou,Africa,Western Africa,19034397,https://restcountries.eu/data/bfa.svg
+13,183,Eritrea,0.434,65.9,5.0,3.9,1708,182,LOW HDI,ER,ERI,Asmara,Africa,Eastern Africa,5352000,https://restcountries.eu/data/eri.svg
+14,184,Mali,0.42700000000000005,58.9,7.6,2.4,1965,184,LOW HDI,ML,MLI,Bamako,Africa,Western Africa,18135000,https://restcountries.eu/data/mli.svg
+15,185,Burundi,0.423,61.2,11.3,3.1,660,185,LOW HDI,BI,BDI,Bujumbura,Africa,Eastern Africa,10114505,https://restcountries.eu/data/bdi.svg
+16,186,South Sudan,0.413,57.6,5.0,4.8,1455,186,LOW HDI,SS,SSD,Juba,Africa,Middle Africa,12131000,https://restcountries.eu/data/ssd.svg
+17,187,Chad,0.401,54.0,7.5,2.4,1716,187,LOW HDI,TD,TCD,N'Djamena,Africa,Middle Africa,14497000,https://restcountries.eu/data/tcd.svg
+18,188,Central African Republic,0.381,52.8,7.6,4.3,777,188,LOW HDI,CF,CAF,Bangui,Africa,Middle Africa,4998000,https://restcountries.eu/data/caf.svg
+19,189,Niger,0.377,62.0,6.5,2.0,912,189,LOW HDI,NE,NER,Niamey,Africa,Western Africa,20715000,https://restcountries.eu/data/ner.svg

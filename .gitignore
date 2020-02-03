@@ -2,3 +2,4 @@
 .ipynb_checkpoints/CleaningDataset-checkpoint.ipynb
 SRC/.ipynb_checkpoints/CleaningDataset-checkpoint.ipynb
 .ipynb_checkpoints/
+__pycache__
