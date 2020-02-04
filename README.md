@@ -10,8 +10,8 @@ API integration using DataSets as main source. Argparse function y FPDF to creat
 api, web scraping, argparse, fpdf
 
 ## Input
-- DATASET | [Human Developement Index of 2019] http://hdr.undp.org/en/content/human-development-index-hdi, Life Expectation and Expected and Actual years of schooling. 
-- API | [Rest Countries] https://restcountries.eu/ Country information about population, international code, flag, capital city...
+- DATASET | [Human Developement Index of 2019](http://hdr.undp.org/en/content/human-development-index-hdi), Life Expectation and Expected and Actual years of schooling. 
+- API | [Rest Countries](https://restcountries.eu/) Country information about population, international code, flag, capital city...
 
 
 ## Output
@@ -32,4 +32,4 @@ If necessary.
 Learning and enjoying everyday.
 
 Next step:
-- WEB SCRAPING | [CountryFlags] https://www.countryflags.io/
+- WEB SCRAPING | [CountryFlags](https://www.countryflags.io/)
