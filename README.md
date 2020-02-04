@@ -3,7 +3,7 @@
 ## Introducción
 This project create added value in the analysis of the Human Development Index provided by the UN in 2019, generating key statistical data to understand the impact of this index on the global prospective.
 
-![Flag](/INPUT/flag.jpg)
+![Flag](INPUT/Flag.jpg)
 
 ## Methodology
 API integration using DataSets as main source. Argparse function y FPDF to create added value reports.
