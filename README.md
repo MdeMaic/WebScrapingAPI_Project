@@ -6,7 +6,11 @@ This project create added value in the analysis of the Human Development Index p
 ![Flag](INPUT/Flag.jpg)
 
 ## Methodology
-API integration using DataSets as main source. Argparse function y FPDF to create added value reports.
+API integration using DataSets as main source. Argparse function y FPDF to create added value reports. The flags for the argparse are:
+ - -top | Compare statistic values of top 10 countries UP and DOWN.
+ - -region | Show region report and generate graphs
+ - -filt | Filter HDI values to obtain a range of subregion values.
+ - -repo | Create pdf report.
 
 ## Keywords
 api, web scraping, argparse, fpdf
@@ -19,6 +23,7 @@ api, web scraping, argparse, fpdf
 ## Output
 - DATAFRAME | CSV information of both source together.
 - Graphs | Population, GNI per capita and Life Expectation by region (Europe, Asia...)
+![HDI distribution](OUTPUT/region_HDIdistribution.png)
 - Reports
 
 ## Contributing
