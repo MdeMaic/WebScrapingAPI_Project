@@ -41,6 +41,7 @@ def cleanMerge():
     countries = requestJSON('https://restcountries.eu/rest/v2/all')
     lista_name = [cm["name"] for cm in countries]
 
+    #No funciona el import desde functions. REVISAR ESTO.
     def missedCountries():
         found=[]
         for ind,value in enumerate(df.Country):
