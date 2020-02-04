@@ -6,7 +6,7 @@ from SRC.initialclean import cleanMerge
 if __name__ == "__main__":
     top, region, filt, repo = parser()
     
-    if top == region == filt == False:
+    if top == region == filt == repo == False:
         print("Hola! Elige un flag: -top, -region, -filt, -repo")
 
     if top:
@@ -18,14 +18,14 @@ if __name__ == "__main__":
         reg = createRegion()
     
     if filt:
-        print("filter subregion between 0.49 and 0.92 HDI values")
+        print("\nFilter subregion between 0.49 and 0.92 HDI values")
         minim =input("Insert a min value: ")
         maxim =input("Insert a max value: ")
         if float(minim) >= 0.93 or float(maxim) <= 0.48:
-            print("Error de parametrización")
+            print("FAIL | Error de parametrización")
         else:
             if minim > maxim:
-                print("Error | min > max")
+                print("FAIL | min > max")
             else:
                 flt = filterRegion(minim,maxim)
     

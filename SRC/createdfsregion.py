@@ -16,7 +16,7 @@ def createRegion():
     print(reg)
 
     region = reg.T
-    print("\nGenerating images....")
+    print("\nGenerating Graphs....")
     gni = region.GNIperCapita.plot.bar(title="GNI per Capita", figsize=(8,9))
     figgni = gni.get_figure()
     figgni.savefig("OUTPUT/region_GNIperCapita.png",bbox='tight')
@@ -24,10 +24,12 @@ def createRegion():
     pop = region.population.plot.bar(title="Population")
     figpop = pop.get_figure()
     figpop.savefig("OUTPUT/region_population.png",bbox='tight')
-
+    print("OUTPUT/region_lifeExpectancy.png")
+    
     ages = region.population.plot.bar(title="Life Expectancy")
     figages = ages.get_figure()
     figages.savefig("OUTPUT/region_lifeExpectancy.png",bbox='tight')
+    print("OUTPUT/region_lifeExpectancy.png")
 
     index_reg = df.loc[:, ['Category','region']]
     index_cat = pd.get_dummies(index_reg["Category"])
@@ -44,7 +46,8 @@ def createRegion():
     end = final.plot.bar(title="HDI Distribution",stacked=True,color=["green","steelblue","orange","orangered"], figsize=(8,9))
     fig = end.get_figure()
     fig.savefig("OUTPUT/region_HDIdistribution.png")
-    print("\nImages created succesfully :)\n")
+    print("OUTPUT/region_HDIdistribution.png")
+    print("\nGraphs created succesfully :)\n")
     
     return "Happy"
 
@@ -59,9 +62,9 @@ def filterRegion(min,max):
     reg_filtered = reg_filtered[reg_filtered["HDI"]<=float(max)]
     reg_filtered
 
-    print("----------------------- HDI between:",min,"&",max,"------------------------")
+    print("----------------------- HDI between:",min,"&",max,"-------------------------")
     print(reg_filtered)
-    print("---------------------------------------------------------------------------")
+    print("-------------------------------------------------------------------------\n")
     return reg_filtered
 
 
