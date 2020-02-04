@@ -46,33 +46,6 @@ def createRegion():
     fig.savefig("OUTPUT/region_HDIdistribution.png")
     print("\nImages created succesfully :)\n")
     
-    pdf = FPDF('P','mm','A4')
-    pdf.add_page()
-    font_type = ('Arial', 'B', 16)
-    num_col = len(reg.columns)
-    w,h=190,277
-    pdf.set_font(*font_type)
-    pdf.set_text_color(0)
-    pdf.set_draw_color(0)
-    pdf.cell(w,10,'Datos Acumulados',1,1,'C')
-    pdf.set_line_width(0.2)
-    for col in reg.columns:
-        pdf.cell(w/num_col,10,col,1,0,'C')
-    pdf.ln()
-    pdf.set_fill_color(243,95,95)
-    font_type = ('Arial', '', 12)
-    pdf.set_font(*font_type)
-
-    for _,row in reg.iterrows():
-        fill = 0
-        if row["country"] in european_countries:
-            fill = 1
-        # iterating columns
-        for value in reg.columns:
-            pdf.cell(w/num_col,10,fit_word(row[value],w/num_col,font_type),1,0,'C',fill)
-        pdf.ln()
-    pdf.output("archivo.pdf",'F')
-    
     return "Happy"
 
 def filterRegion(min,max):
@@ -91,9 +64,53 @@ def filterRegion(min,max):
     print("---------------------------------------------------------------------------")
     return reg_filtered
 
+
+
+def printReport():
     
+    
+    df = pd.read_csv("OUTPUT/HDIrank2019_02_mergedDataframes.csv")
+    df = df.drop(columns="Unnamed: 0")
+
+    reg = df.groupby("region").mean().drop(columns = ["HDIrank","LastYearRank"]).T.round(2)
+
     pdf = FPDF('P','mm','A4')
     pdf.add_page()
+    font_type = ('Arial', 'B', 16)
+    num_col = 6
+    w,h=190,277
+    pdf.set_font(*font_type)
+    pdf.set_text_color(0)
+    pdf.set_draw_color(0)
+    pdf.cell(w,10,'Datos Acumulados',1,1,'C')
+    pdf.set_line_width(0.2)
+    for col in reg.columns:
+        pdf.cell(w/num_col,10,col,1,0,'C')
+    pdf.ln()
+    pdf.set_fill_color(243,95,95)
+    font_type = ('Arial', '', 12)
+    pdf.set_font(*font_type)
     
-    pdf.set_font('Arial', 'B', 16)
+    '''
+    def fit_word(string,cell_w,font_type):
+        ver = FPDF()
+        #font_type(font,style,size))
+        ver.set_font(*font_type)
+        # if string fits, return it unchanged
+        if ver.get_string_width(string)<cell_w:
+            return string
+        # cut string until it fits
+        while ver.get_string_width(string)>=cell_w:
+            string = string[:-1]
+        # replace last 3 characters with "..."
+        string = string[:-3] + "..."
+        return string
+    '''
     
+    for index,row in reg.iterrows():
+        for value in reg.columns:
+            pdf.cell(w/num_col,10,row[value],1,0,'C',0)
+        pdf.ln()
+    
+    pdf.output("OUTPUT/report.pdf",'F')
+    return "Repo done"

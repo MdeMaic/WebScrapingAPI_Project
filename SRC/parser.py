@@ -1,5 +1,5 @@
 from argparse import ArgumentParser
-from SRC.createdfsregion import filterRegion
+#from SRC.createdfsregion import filterRegion
 
 def parser():
     # Create ArgumentParser object
@@ -10,6 +10,7 @@ def parser():
     parser.add_argument("-top", action='store_true',default=False)
     parser.add_argument("-region", action='store_true', default=False)
     parser.add_argument("-filt", action='store_true', default=False)
+    parser.add_argument("-repo", action='store_true', default=False)
     # Group of arguments, mutually exclusive
     #parser.add_argument("numbers", type=float, nargs=2, help="Two values between 0.49 and 0.93")
     # Retrieve Arguments
@@ -18,5 +19,6 @@ def parser():
     top = args.top
     region = args.region
     filt = args.filt
-    
-    return top,region,filt
+    repo = args.repo
+
+    return top,region,filt,repo

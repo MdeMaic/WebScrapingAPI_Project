@@ -1,13 +1,13 @@
 from SRC.parser import parser
-from SRC.createdfsregion import createRegion, filterRegion
+from SRC.createdfsregion import createRegion, filterRegion, printReport
 from SRC.createdfstop import createTop
 from SRC.initialclean import cleanMerge
 
 if __name__ == "__main__":
-    top, region, filt = parser()
+    top, region, filt, repo = parser()
     
     if top == region == filt == False:
-        print("Elige un flag: -top, -region, -filt")
+        print("Hola! Elige un flag: -top, -region, -filt, -repo")
 
     if top:
         clean = cleanMerge()
@@ -29,5 +29,6 @@ if __name__ == "__main__":
             else:
                 flt = filterRegion(minim,maxim)
     
-        
+    if repo:
+        report = printReport()     
 

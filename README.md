@@ -31,5 +31,5 @@ If necessary.
 ## Project status
 Learning and enjoying everyday.
 
-Next step:
+Next steps:
 - WEB SCRAPING | [CountryFlags](https://www.countryflags.io/)
