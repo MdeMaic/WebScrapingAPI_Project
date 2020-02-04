@@ -6,6 +6,7 @@ from IPython.display import Image
 from SRC.functions import requestJSON
 from fpdf import FPDF
 
+#Generate graphs and groupby region.
 def createRegion():
 
     df = pd.read_csv("OUTPUT/HDIrank2019_02_mergedDataframes.csv")
@@ -51,6 +52,7 @@ def createRegion():
     
     return "Happy"
 
+#Generate dfs filtered by subregion and the arguments from input. Showed on screen. 
 def filterRegion(min,max):
     
     df = pd.read_csv("OUTPUT/HDIrank2019_02_mergedDataframes.csv")
@@ -68,7 +70,7 @@ def filterRegion(min,max):
     return reg_filtered
 
 
-
+#Create repo in pdf format.
 def printReport():
     
     
@@ -95,6 +97,7 @@ def printReport():
     pdf.set_font(*font_type)
     
     '''
+    NOT WORKING!
     def fit_word(string,cell_w,font_type):
         ver = FPDF()
         #font_type(font,style,size))

@@ -9,6 +9,7 @@ import requests
 from IPython.display import Image
 import os
 
+#Request API function
 def requestJSON(url):
     res = requests.get(url)
     if res.status_code != 200:
@@ -16,6 +17,7 @@ def requestJSON(url):
         raise ValueError("Bad Response")
     return res.json()
 
+#Cleaning function. Merge API and DATASET.
 def missedCountries(df):
     found=[]
     for ind,value in enumerate(df.Country):

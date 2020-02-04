@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 from IPython.display import Image
 from SRC.functions import requestJSON
 
+#Create the DF and filter top 10 UP and DOWN countries. Show them on screen and generate a new DataFrame.
 def createTop():
 
     df = pd.read_csv("OUTPUT/HDIrank2019_02_mergedDataframes.csv")
